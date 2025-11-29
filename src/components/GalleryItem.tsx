@@ -28,7 +28,7 @@ const GalleryItem = ({ imageUrl, title, category, index }: GalleryItemProps) => 
 
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <div className="absolute bottom-0 left-0 right-0 p-6">
-          <p className="text-amber-500 text-sm font-semibold mb-1">{category}</p>
+          <p className="text-[#641717] text-sm font-semibold mb-1">{category}</p>
           <h3 className="text-white text-xl font-bold">{title}</h3>
         </div>
       </div>

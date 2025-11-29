@@ -35,7 +35,7 @@ const About = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            À propos <span className="text-amber-500">d'Épopée Visuelle</span>
+            À propos <span className="text-[#641717]">d'Épopée Visuelle</span>
           </h2>
         </motion.div>
 
@@ -46,7 +46,7 @@ const About = () => {
             viewport={{ once: true }}
           >
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-amber-500 to-amber-600 rounded-3xl opacity-20 blur-xl" />
+              <div className="absolute -inset-4 bg-gradient-to-r from-[#641717] to-[#641717] rounded-3xl opacity-20 blur-xl" />
               <div className="relative bg-gradient-to-br from-gray-200 to-gray-300 rounded-3xl aspect-square"
                    style={{
                      backgroundImage: 'url(/img/a_propos.png)',
@@ -67,7 +67,7 @@ const About = () => {
               Votre partenaire créatif à Kinshasa
             </h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              <span className="font-semibold text-amber-500">Épopée Visuelle</span> est un studio créatif basé à Kinshasa, spécialisé dans la conception de cadres personnalisés, montages photo et impressions premium.
+              <span className="font-semibold text-[#641717]">Épopée Visuelle</span> est un studio créatif basé à Kinshasa, spécialisé dans la conception de cadres personnalisés, montages photo et impressions premium.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
               Nous transformons vos souvenirs en œuvres d'art uniques, alliant créativité, qualité et professionnalisme. Chaque projet est une nouvelle aventure, une nouvelle épopée visuelle que nous créons avec passion pour vous.
@@ -88,8 +88,8 @@ const About = () => {
               transition={{ delay: index * 0.1 }}
               className="text-center"
             >
-              <div className="bg-amber-500/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <value.icon className="w-8 h-8 text-amber-500" />
+              <div className="bg-[#641717]/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <value.icon className="w-8 h-8 text-[#641717]" />
               </div>
               <h4 className="text-xl font-bold text-gray-900 mb-2">{value.title}</h4>
               <p className="text-gray-600">{value.description}</p>

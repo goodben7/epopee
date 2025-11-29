@@ -41,7 +41,7 @@ const Services = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Nos <span className="text-amber-500">Services</span>
+            Nos <span className="text-[#641717]">Services</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Une gamme complète de services pour donner vie à vos idées créatives

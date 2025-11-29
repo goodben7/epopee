@@ -95,7 +95,7 @@ const Packages = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Nos <span className="text-amber-500">Packages</span>
+            Nos <span className="text-[#641717]">Packages</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Des offres adaptées à tous vos besoins et budgets

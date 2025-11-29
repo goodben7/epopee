@@ -15,7 +15,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 w-full bg-black/95 backdrop-blur-sm z-50 border-b border-amber-600/20">
+    <nav className="fixed top-0 w-full bg-black/95 backdrop-blur-sm z-50 border-b border-[#641717]/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <motion.div
@@ -23,7 +23,7 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             className="flex items-center space-x-2"
           >
-            <img src="/img/logo.png" alt="Logo" className="w-9 h-9 rounded-full object-cover" />
+            <img src="/img/logo.jpeg" alt="Logo" className="w-9 h-9 rounded-full object-cover" />
             <span className="text-xl font-bold text-white">Épopée Visuelle</span>
           </motion.div>
 
@@ -35,7 +35,7 @@ const Navbar = () => {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="text-gray-300 hover:text-amber-500 transition-colors duration-300"
+                className="text-gray-300 hover:text-[#641717] transition-colors duration-300"
               >
                 {item.label}
               </motion.a>
@@ -46,7 +46,7 @@ const Navbar = () => {
             href="#contact"
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="hidden md:block bg-amber-500 text-black px-6 py-2 rounded-full font-semibold hover:bg-amber-400 transition-colors duration-300"
+            className="hidden md:block bg-[#641717] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#641717] transition-colors duration-300"
           >
             Commander
           </motion.a>
@@ -65,7 +65,7 @@ const Navbar = () => {
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: 'auto' }}
           exit={{ opacity: 0, height: 0 }}
-          className="md:hidden bg-black border-t border-amber-600/20"
+          className="md:hidden bg-black border-t border-[#641717]/20"
         >
           <div className="px-4 pt-2 pb-4 space-y-2">
             {menuItems.map((item) => (
@@ -73,7 +73,7 @@ const Navbar = () => {
                 key={item.label}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="block py-2 text-gray-300 hover:text-amber-500 transition-colors"
+                className="block py-2 text-gray-300 hover:text-[#641717] transition-colors"
               >
                 {item.label}
               </a>
@@ -81,7 +81,7 @@ const Navbar = () => {
             <a
               href="#contact"
               onClick={() => setIsOpen(false)}
-              className="block w-full text-center bg-amber-500 text-black px-6 py-2 rounded-full font-semibold mt-4"
+              className="block w-full text-center bg-[#641717] text-white px-6 py-2 rounded-full font-semibold mt-4"
             >
               Commander
             </a>

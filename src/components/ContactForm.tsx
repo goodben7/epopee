@@ -42,7 +42,7 @@ const ContactForm = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#641717] focus:border-transparent transition-all"
             placeholder="Votre nom"
           />
         </div>
@@ -58,7 +58,7 @@ const ContactForm = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#641717] focus:border-transparent transition-all"
             placeholder="votre@email.com"
           />
         </div>
@@ -74,7 +74,7 @@ const ContactForm = () => {
             value={formData.phone}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#641717] focus:border-transparent transition-all"
             placeholder="+243 XXX XXX XXX"
           />
         </div>
@@ -90,14 +90,14 @@ const ContactForm = () => {
             onChange={handleChange}
             required
             rows={5}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all resize-none"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#641717] focus:border-transparent transition-all resize-none"
             placeholder="Décrivez votre projet..."
           />
         </div>
 
         <button
           type="submit"
-          className="w-full bg-amber-500 text-white py-4 rounded-full font-semibold hover:bg-amber-600 transition-colors duration-300 flex items-center justify-center space-x-2"
+          className="w-full bg-[#641717] text-white py-4 rounded-full font-semibold hover:bg-[#641717] transition-colors duration-300 flex items-center justify-center space-x-2"
         >
           <span>Envoyer la demande</span>
           <Send size={18} />

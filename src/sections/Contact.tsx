@@ -37,7 +37,7 @@ const Contact = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Contactez-<span className="text-amber-500">nous</span>
+            Contactez-<span className="text-[#641717]">nous</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Prêt à transformer vos souvenirs en œuvres d'art ? Parlons de votre projet
@@ -56,8 +56,8 @@ const Contact = () => {
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
                   <div key={index} className="flex items-start space-x-4">
-                    <div className="bg-amber-500/10 p-3 rounded-lg">
-                      <info.icon className="w-6 h-6 text-amber-500" />
+                    <div className="bg-[#641717]/10 p-3 rounded-lg">
+                      <info.icon className="w-6 h-6 text-[#641717]" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">{info.title}</h4>
@@ -70,7 +70,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl p-8 text-white">
+            <div className="bg-gradient-to-br from-[#641717] to-[#641717] rounded-2xl p-8 text-white">
               <div className="flex items-center space-x-3 mb-4">
                 <FaWhatsapp size={32} />
                 <h3 className="text-2xl font-bold">Commandez sur WhatsApp</h3>
@@ -82,7 +82,7 @@ const Contact = () => {
                 href="https://wa.me/243XXXXXXXXX"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-white text-amber-500 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300"
+                className="inline-block bg-white text-[#641717] px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300"
               >
                 Ouvrir WhatsApp
               </a>

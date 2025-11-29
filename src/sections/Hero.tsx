@@ -14,8 +14,8 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="flex items-center justify-center space-x-2 mb-6"
         >
-          <Sparkles className="w-6 h-6 text-amber-500" />
-          <span className="text-amber-500 font-semibold tracking-wider uppercase text-sm">
+          <Sparkles className="w-6 h-6 text-[#641717]" />
+          <span className="text-[#641717] font-semibold tracking-wider uppercase text-sm">
             Studio Créatif
           </span>
         </motion.div>
@@ -27,7 +27,7 @@ const Hero = () => {
           className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
         >
           Transformez vos moments<br />
-          <span className="text-amber-500">en œuvres d'art</span>
+          <span className="text-[#641717]">en œuvres d'art</span>
         </motion.h1>
 
         <motion.p
@@ -47,7 +47,7 @@ const Hero = () => {
         >
           <a
             href="#packages"
-            className="group bg-amber-500 text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-amber-400 transition-all duration-300 flex items-center space-x-2 shadow-lg shadow-amber-500/50"
+            className="group bg-[#641717] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#641717] transition-all duration-300 flex items-center space-x-2 shadow-lg"
           >
             <span>Voir les Packages</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -73,9 +73,9 @@ const Hero = () => {
             { number: '24h', label: 'Délai moyen' },
           ].map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-amber-500 mb-2">
-                {stat.number}
-              </div>
+            <div className="text-3xl md:text-4xl font-bold text-[#641717] mb-2">
+              {stat.number}
+            </div>
               <div className="text-gray-400 text-sm">{stat.label}</div>
             </div>
           ))}
@@ -91,9 +91,9 @@ const Hero = () => {
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="w-6 h-10 border-2 border-amber-500 rounded-full flex items-start justify-center p-2"
+          className="w-6 h-10 border-2 border-[#641717] rounded-full flex items-start justify-center p-2"
         >
-          <div className="w-1 h-2 bg-amber-500 rounded-full" />
+          <div className="w-1 h-2 bg-[#641717] rounded-full" />
         </motion.div>
       </motion.div>
     </section>

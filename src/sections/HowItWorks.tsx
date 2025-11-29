@@ -39,7 +39,7 @@ const HowItWorks = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Comment <span className="text-amber-500">ça marche</span>
+            Comment <span className="text-[#641717]">ça marche</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Un processus simple et transparent en 4 étapes
@@ -58,11 +58,11 @@ const HowItWorks = () => {
             >
               <div className="text-center">
                 <div className="relative inline-block mb-6">
-                  <div className="absolute -inset-4 bg-amber-500/10 rounded-full" />
-                  <div className="relative bg-white border-4 border-amber-500 w-20 h-20 rounded-full flex items-center justify-center">
-                    <step.icon className="w-8 h-8 text-amber-500" />
+                  <div className="absolute -inset-4 bg-[#641717]/10 rounded-full" />
+                  <div className="relative bg-white border-4 border-[#641717] w-20 h-20 rounded-full flex items-center justify-center">
+                    <step.icon className="w-8 h-8 text-[#641717]" />
                   </div>
-                  <div className="absolute -top-2 -right-2 bg-amber-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">
+                  <div className="absolute -top-2 -right-2 bg-[#641717] text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">
                     {step.number}
                   </div>
                 </div>
@@ -72,7 +72,7 @@ const HowItWorks = () => {
               </div>
 
               {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-10 left-full w-full h-0.5 bg-gradient-to-r from-amber-500 to-transparent transform -translate-x-1/2" />
+                <div className="hidden lg:block absolute top-10 left-full w-full h-0.5 bg-gradient-to-r from-[#641717] to-transparent transform -translate-x-1/2" />
               )}
             </motion.div>
           ))}

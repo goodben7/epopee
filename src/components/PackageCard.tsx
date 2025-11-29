@@ -19,12 +19,12 @@ const PackageCard = ({ name, price, features, index, highlighted = false }: Pack
       whileHover={{ y: -8, scale: 1.02 }}
       className={`relative rounded-2xl p-8 ${
         highlighted
-          ? 'bg-gradient-to-br from-amber-500 to-amber-600 text-white shadow-2xl'
+          ? 'bg-gradient-to-br from-[#641717] to-[#641717] text-white shadow-2xl'
           : 'bg-white text-gray-900 shadow-lg border border-gray-100'
       } transition-all duration-300`}
     >
       {highlighted && (
-        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-black text-amber-500 px-4 py-1 rounded-full text-sm font-semibold">
+        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-black text-[#641717] px-4 py-1 rounded-full text-sm font-semibold">
           Populaire
         </div>
       )}
@@ -34,7 +34,7 @@ const PackageCard = ({ name, price, features, index, highlighted = false }: Pack
           {name}
         </h3>
         <div className="flex items-baseline">
-          <span className={`text-4xl font-bold ${highlighted ? 'text-white' : 'text-amber-500'}`}>
+          <span className={`text-4xl font-bold ${highlighted ? 'text-white' : 'text-[#641717]'}`}>
             ${price}
           </span>
         </div>
@@ -43,7 +43,7 @@ const PackageCard = ({ name, price, features, index, highlighted = false }: Pack
       <ul className="space-y-3 mb-8">
         {features.map((feature, idx) => (
           <li key={idx} className="flex items-start space-x-3">
-            <Check className={`w-5 h-5 flex-shrink-0 mt-0.5 ${highlighted ? 'text-white' : 'text-amber-500'}`} />
+            <Check className={`w-5 h-5 flex-shrink-0 mt-0.5 ${highlighted ? 'text-white' : 'text-[#641717]'}`} />
             <span className={`text-sm ${highlighted ? 'text-white' : 'text-gray-600'}`}>
               {feature}
             </span>
@@ -55,8 +55,8 @@ const PackageCard = ({ name, price, features, index, highlighted = false }: Pack
         href="#contact"
         className={`block w-full text-center py-3 rounded-full font-semibold transition-all duration-300 ${
           highlighted
-            ? 'bg-white text-amber-500 hover:bg-gray-100'
-            : 'bg-amber-500 text-white hover:bg-amber-600'
+            ? 'bg-white text-[#641717] hover:bg-gray-100'
+            : 'bg-[#641717] text-white hover:bg-[#641717]'
         }`}
       >
         Commander maintenant

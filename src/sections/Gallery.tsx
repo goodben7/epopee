@@ -28,7 +28,7 @@ const Gallery = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Notre <span className="text-amber-500">Galerie</span>
+            Notre <span className="text-[#641717]">Galerie</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Découvrez quelques-unes de nos réalisations
@@ -55,7 +55,7 @@ const Gallery = () => {
         >
           <a
             href="#contact"
-            className="inline-block bg-amber-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-amber-600 transition-colors duration-300"
+            className="inline-block bg-[#641717] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#641717] transition-colors duration-300"
           >
             Créer mon projet
           </a>

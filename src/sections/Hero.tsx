@@ -43,8 +43,8 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
         >
-          Transformez vos moments<br />
-          <span className="text-[#641717]">en œuvres d'art</span>
+          Vos souvenirs, 
+          <span className="text-[#641717]"> notre légende</span>
         </motion.h1>
 
         <motion.p
@@ -53,7 +53,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed"
         >
-          Conception graphique, impressions premium, cadres personnalisés et montages photo d'exception à Kinshasa.
+          Le meilleur de la conception, de l’impression et des cadres personnalisés, pour des souvenirs d’exception
         </motion.p>
 
         <motion.div

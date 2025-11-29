@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Menu, X, Frame } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
@@ -23,7 +23,7 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             className="flex items-center space-x-2"
           >
-            <Frame className="w-8 h-8 text-amber-500" />
+            <img src="/img/logo.jpg" alt="Logo" className="w-9 h-9 rounded-full object-cover" />
             <span className="text-xl font-bold text-white">Épopée Visuelle</span>
           </motion.div>
 

@@ -1,4 +1,4 @@
-import { Frame, Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 import { FaWhatsapp, FaInstagram, FaFacebook } from 'react-icons/fa';
 
 const Footer = () => {
@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <Frame className="w-8 h-8 text-amber-500" />
+              <img src="/img/logo.jpg" alt="Logo" className="w-9 h-9 rounded-full object-cover" />
               <span className="text-xl font-bold">Épopée Visuelle</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">

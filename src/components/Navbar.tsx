@@ -58,6 +58,14 @@ const Navbar = () => {
           </motion.div>
 
           <div className="hidden md:flex space-x-8">
+            <motion.a
+              href="#home"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="text-white hover:text-[#641717] transition-colors duration-300"
+            >
+              Accueil
+            </motion.a>
             <div className="relative group">
               <motion.a
                 href="#services"
@@ -118,7 +126,7 @@ const Navbar = () => {
             </div>
 
             {menuItems
-              .filter((i) => !['Services', 'Packages'].includes(i.label))
+              .filter((i) => !['Accueil', 'Services', 'Packages'].includes(i.label))
               .map((item, index) => (
                 <motion.a
                   key={item.label}

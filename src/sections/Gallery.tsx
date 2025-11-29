@@ -2,19 +2,20 @@ import { motion } from 'framer-motion';
 import GalleryItem from '../components/GalleryItem';
 
 const Gallery = () => {
+  const base = import.meta.env.BASE_URL;
   const localGalleryItems = [
-    { imageUrl: '/img/Cadre_A0.png', title: 'Cadre A0 Premium', category: 'Cadre A0' },
-    { imageUrl: '/img/Cadre_A2.png', title: 'Cadre A2', category: 'Cadre A2' },
-    { imageUrl: '/img/Cadre_A4.png', title: 'Cadre A4', category: 'Cadre A4' },
-    { imageUrl: '/img/Impression_A8.png', title: 'Impression A8', category: 'Impression' },
-    { imageUrl: '/img/Impression_A6.png', title: 'Impression A6', category: 'Impression' },
-    { imageUrl: '/img/Impression_A4.png', title: 'Impression A4', category: 'Impression' },
-    { imageUrl: '/img/Impression_magazine.png', title: 'Impression Magazine', category: 'Magazine' },
-    { imageUrl: '/img/Lettering.png', title: 'Lettrage', category: 'Lettrage' },
-    { imageUrl: '/img/Montage_photos_1–6.png', title: 'Montage 1–6', category: 'Montage' },
-    { imageUrl: '/img/Montage_photos_1–20.png', title: 'Montage 1–20', category: 'Montage' },
-    { imageUrl: '/img/Montage_1–60.png', title: 'Montage 1–60', category: 'Montage' },
-    { imageUrl: '/img/Image_Hero.png', title: 'Visuel Hero', category: 'Bannière' },
+    { imageUrl: `${base}img/cadre_a0.png`, title: 'Cadre A0 Premium', category: 'Cadre A0' },
+    { imageUrl: `${base}img/cadre_a2.png`, title: 'Cadre A2', category: 'Cadre A2' },
+    { imageUrl: `${base}img/cadre_a4.png`, title: 'Cadre A4', category: 'Cadre A4' },
+    { imageUrl: `${base}img/impression_a8.png`, title: 'Impression A8', category: 'Impression' },
+    { imageUrl: `${base}img/impression_a6.png`, title: 'Impression A6', category: 'Impression' },
+    { imageUrl: `${base}img/impression_a4.png`, title: 'Impression A4', category: 'Impression' },
+    { imageUrl: `${base}img/impression_magazine.png`, title: 'Impression Magazine', category: 'Magazine' },
+    { imageUrl: `${base}img/lettering.png`, title: 'Lettrage', category: 'Lettrage' },
+    { imageUrl: `${base}img/montage_photos_1–6.png`, title: 'Montage 1–6', category: 'Montage' },
+    { imageUrl: `${base}img/montage_photos_1–20.png`, title: 'Montage 1–20', category: 'Montage' },
+    { imageUrl: `${base}img/montage_1–60.png`, title: 'Montage 1–60', category: 'Montage' },
+    { imageUrl: `${base}img/image_hero.png`, title: 'Visuel Hero', category: 'Bannière' },
   ];
   const galleryItems = localGalleryItems;
 

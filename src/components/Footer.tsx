@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <img src="/img/logo.png" alt="Logo" className="w-9 h-9 rounded-full object-cover" />
+              <img src={`${import.meta.env.BASE_URL}img/logo.png`} alt="Logo" className="w-9 h-9 rounded-full object-cover" />
               <span className="text-xl font-bold">Épopée Visuelle</span>
             </div>
             <p className="text-white/80 text-sm leading-relaxed">

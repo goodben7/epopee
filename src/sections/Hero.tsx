@@ -21,7 +21,10 @@ const CountUp = ({ end, duration = 1500, suffix = '' }: { end: number; duration?
 const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-black overflow-hidden pt-16">
-      <div className="absolute inset-0 bg-[url('/img/Image_Hero.png')] bg-cover bg-center opacity-10" />
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-10"
+        style={{ backgroundImage: `url(${import.meta.env.BASE_URL}img/image_hero.png)` }}
+      />
 
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

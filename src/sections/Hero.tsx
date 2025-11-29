@@ -6,28 +6,6 @@ const Hero = () => {
     <section id="home" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-black overflow-hidden pt-16">
       <div className="absolute inset-0 bg-[url('/img/Image_Hero.png')] bg-cover bg-center opacity-10" />
 
-      <div className="absolute inset-0">
-        {[...Array(20)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-1 h-1 bg-amber-500 rounded-full"
-            initial={{
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight,
-              opacity: 0,
-            }}
-            animate={{
-              opacity: [0, 1, 0],
-              scale: [0, 1, 0],
-            }}
-            transition={{
-              duration: 3,
-              repeat: Infinity,
-              delay: Math.random() * 2,
-            }}
-          />
-        ))}
-      </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div

@@ -2,38 +2,21 @@ import { motion } from 'framer-motion';
 import GalleryItem from '../components/GalleryItem';
 
 const Gallery = () => {
-  const galleryItems = [
-    {
-      imageUrl: 'https://images.pexels.com/photos/1266808/pexels-photo-1266808.jpeg',
-      title: 'Cadre Famille Premium',
-      category: 'Cadre A2',
-    },
-    {
-      imageUrl: 'https://images.pexels.com/photos/1050244/pexels-photo-1050244.jpeg',
-      title: 'Montage Mariage',
-      category: 'Cadre A1',
-    },
-    {
-      imageUrl: 'https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg',
-      title: 'Collection Souvenirs',
-      category: 'Cadre A3',
-    },
-    {
-      imageUrl: 'https://images.pexels.com/photos/1152351/pexels-photo-1152351.jpeg',
-      title: 'Portrait Artistique',
-      category: 'Cadre A4',
-    },
-    {
-      imageUrl: 'https://images.pexels.com/photos/1164674/pexels-photo-1164674.jpeg',
-      title: 'Magazine Anniversaire',
-      category: 'Format A4',
-    },
-    {
-      imageUrl: 'https://images.pexels.com/photos/1762851/pexels-photo-1762851.jpeg',
-      title: 'Galerie Voyage',
-      category: 'Cadre A0',
-    },
+  const localGalleryItems = [
+    { imageUrl: '/img/Cadre_A0.png', title: 'Cadre A0 Premium', category: 'Cadre A0' },
+    { imageUrl: '/img/Cadre_A2.png', title: 'Cadre A2', category: 'Cadre A2' },
+    { imageUrl: '/img/Cadre_A4.png', title: 'Cadre A4', category: 'Cadre A4' },
+    { imageUrl: '/img/Impression_A8.png', title: 'Impression A8', category: 'Impression' },
+    { imageUrl: '/img/Impression_A6.png', title: 'Impression A6', category: 'Impression' },
+    { imageUrl: '/img/Impression_A4.png', title: 'Impression A4', category: 'Impression' },
+    { imageUrl: '/img/Impression_magazine.png', title: 'Impression Magazine', category: 'Magazine' },
+    { imageUrl: '/img/Lettering.png', title: 'Lettrage', category: 'Lettrage' },
+    { imageUrl: '/img/Montage_photos_1–6.png', title: 'Montage 1–6', category: 'Montage' },
+    { imageUrl: '/img/Montage_photos_1–20.png', title: 'Montage 1–20', category: 'Montage' },
+    { imageUrl: '/img/Montage_1–60.png', title: 'Montage 1–60', category: 'Montage' },
+    { imageUrl: '/img/Image_Hero.png', title: 'Visuel Hero', category: 'Bannière' },
   ];
+  const galleryItems = localGalleryItems;
 
   return (
     <section id="gallery" className="py-20 bg-gray-50">

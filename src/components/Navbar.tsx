@@ -23,7 +23,7 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             className="flex items-center space-x-2"
           >
-            <img src="/img/logo.jpg" alt="Logo" className="w-9 h-9 rounded-full object-cover" />
+            <img src="/img/logo.png" alt="Logo" className="w-9 h-9 rounded-full object-cover" />
             <span className="text-xl font-bold text-white">Épopée Visuelle</span>
           </motion.div>
 

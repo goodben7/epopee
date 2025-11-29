@@ -49,7 +49,7 @@ const About = () => {
               <div className="absolute -inset-4 bg-gradient-to-r from-amber-500 to-amber-600 rounded-3xl opacity-20 blur-xl" />
               <div className="relative bg-gradient-to-br from-gray-200 to-gray-300 rounded-3xl aspect-square"
                    style={{
-                     backgroundImage: 'url(https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=800)',
+                     backgroundImage: 'url(/img/a_propos.png)',
                      backgroundSize: 'cover',
                      backgroundPosition: 'center',
                    }}

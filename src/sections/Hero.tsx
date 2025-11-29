@@ -4,7 +4,7 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-black overflow-hidden pt-16">
-      <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=1920')] bg-cover bg-center opacity-10" />
+      <div className="absolute inset-0 bg-[url('/img/Image_Hero.png')] bg-cover bg-center opacity-10" />
 
       <div className="absolute inset-0">
         {[...Array(20)].map((_, i) => (

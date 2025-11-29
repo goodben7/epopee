@@ -24,7 +24,7 @@ const PackageCard = ({ name, price, features, index, highlighted = false }: Pack
       } transition-all duration-300`}
     >
       {highlighted && (
-        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-black text-[#641717] px-4 py-1 rounded-full text-sm font-semibold">
+        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-gray-900/80 to-black/80 text-white px-4 py-1 rounded-full text-sm font-semibold">
           Populaire
         </div>
       )}

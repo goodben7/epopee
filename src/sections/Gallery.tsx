@@ -55,9 +55,9 @@ const Gallery = () => {
         >
           <a
             href="#contact"
-            className="inline-block bg-[#641717] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#641717] transition-colors duration-300"
+            className="inline-block bg-[#641717] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#641717] transition-colors duration-300 hover:scale-105 active:scale-95"
           >
-            Créer mon projet
+            Commander maintenant
           </a>
         </motion.div>
       </div>

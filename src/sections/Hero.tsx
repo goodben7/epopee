@@ -1,5 +1,22 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles } from 'lucide-react';
+import { useEffect, useState } from 'react';
+
+const CountUp = ({ end, duration = 1500, suffix = '' }: { end: number; duration?: number; suffix?: string }) => {
+  const [value, setValue] = useState(0);
+  useEffect(() => {
+    const start = 0;
+    const startTime = performance.now();
+    const step = (now: number) => {
+      const progress = Math.min((now - startTime) / duration, 1);
+      const next = Math.floor(start + (end - start) * progress);
+      setValue(next);
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }, [end, duration]);
+  return <>{value}{suffix}</>;
+};
 
 const Hero = () => {
   return (
@@ -68,14 +85,14 @@ const Hero = () => {
           className="mt-20 grid grid-cols-3 gap-8 max-w-3xl mx-auto"
         >
           {[
-            { number: '500+', label: 'Projets réalisés' },
-            { number: '100%', label: 'Satisfaction client' },
-            { number: '24h', label: 'Délai moyen' },
+            { end: 500, suffix: '+', label: 'Projets réalisés' },
+            { end: 100, suffix: '%', label: 'Satisfaction client' },
+            { end: 24, suffix: 'h', label: 'Délai moyen' },
           ].map((stat, index) => (
             <div key={index} className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-[#641717] mb-2">
-              {stat.number}
-            </div>
+              <div className="text-3xl md:text-4xl font-bold text-[#641717] mb-2">
+                <CountUp end={stat.end} suffix={stat.suffix} />
+              </div>
               <div className="text-gray-400 text-sm">{stat.label}</div>
             </div>
           ))}

@@ -55,7 +55,14 @@ const Contact = () => {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Informations de contact</h3>
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
-                  <div key={index} className="flex items-start space-x-4">
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.08 }}
+                    className="flex items-start space-x-4"
+                  >
                     <div className="bg-[#641717]/10 p-3 rounded-lg">
                       <info.icon className="w-6 h-6 text-[#641717]" />
                     </div>
@@ -65,7 +72,7 @@ const Contact = () => {
                         <p key={idx} className="text-gray-600">{detail}</p>
                       ))}
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>

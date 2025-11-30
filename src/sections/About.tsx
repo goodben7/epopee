@@ -65,7 +65,7 @@ const About = () => {
             className="space-y-6"
           >
             <h3 className="text-3xl font-bold text-gray-900">
-              Votre partenaire créatif à Kinshasa
+              Votre partenaire créatif 
             </h3>
             <p className="text-lg text-gray-600 leading-relaxed">
               <span className="font-semibold text-[#641717]">Épopée Visuelle</span> est un studio créatif basé à Kinshasa, spécialisé dans la conception de cadres personnalisés, montages photo et impressions premium.

@@ -47,12 +47,13 @@ const About = () => {
           >
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-[#641717] to-[#641717] rounded-3xl opacity-20 blur-xl" />
-              <div className="relative bg-gradient-to-br from-gray-200 to-gray-300 rounded-3xl aspect-square"
-                   style={{
-                     backgroundImage: `url(${import.meta.env.BASE_URL}img/a_propos.png)`,
-                     backgroundSize: 'cover',
-                     backgroundPosition: 'center',
-                   }}
+              <img
+                src={`${import.meta.env.BASE_URL}img/a_propos.png`}
+                alt="À propos"
+                loading="lazy"
+                decoding="async"
+                fetchPriority="low"
+                className="relative rounded-3xl aspect-square object-cover w-full h-full"
               />
             </div>
           </motion.div>

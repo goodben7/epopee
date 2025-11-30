@@ -17,13 +17,13 @@ const GalleryItem = ({ imageUrl, title, category, index }: GalleryItemProps) => 
       whileHover={{ scale: 1.05 }}
       className="relative group cursor-pointer overflow-hidden rounded-2xl shadow-lg aspect-square"
     >
-      <div
-        className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300"
-        style={{
-          backgroundImage: `url(${imageUrl})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
+      <img
+        src={imageUrl}
+        alt={title}
+        loading="lazy"
+        decoding="async"
+        fetchPriority="low"
+        className="absolute inset-0 w-full h-full object-cover"
       />
 
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
